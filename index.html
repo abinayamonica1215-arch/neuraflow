@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuraFlow-AI  Data Pipeline Automation Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="AI data automation, data pipeline automation, AI workflow platform, real-time data processing, no-code data pipeline, automated ETL, AI-driven analytics">
+    <meta name="description" content="NeuraFlow automates messy raw data into clean, real-time insights using AI-driven pipelines — no code, no delays, fully automated.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            arctic: '#F1F6F4',
+            forsythia: '#FFC801',
+            nocturnal: '#114C5A',
+            mint: '#D9E8E2',
+            saffron: '#FF9932',
+            noir: '#172B36',
+          },
+          fontFamily: {
+            mono: ['JetBrains Mono', 'monospace'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+ <header class="fixed top-0 w-full bg-arctic/80 backdrop-blur-md z-50 border-b border-mint">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="font-mono font-bold text-xl text-nocturnal">NeuraFlow</div>
+    <ul class="hidden md:flex gap-8 font-medium text-sm">
+      <li><a href="#features" class="hover:text-saffron transition-colors duration-150">Features</a></li>
+      <li><a href="#pricing" class="hover:text-saffron transition-colors duration-150">Pricing</a></li>
+      <li><a href="#proof" class="hover:text-saffron transition-colors duration-150">Customers</a></li>
+    </ul>
+    <a href="#pricing" class="bg-forsythia text-noir font-semibold px-5 py-2 rounded-full hover:scale-105 transition-transform duration-150">
+      Get Started
+    </a>
+  </nav>
+ </header>
+
+ <main>
+  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 bg-arctic">
+    <h1 class="font-mono font-bold text-5xl md:text-6xl text-nocturnal max-w-3xl leading-tight opacity-0 animate-fadeUp">
+      Automate Your Data Pipeline with <span class="text-saffron">AI</span>
+    </h1>
+    <p class="mt-6 text-lg text-noir/70 max-w-xl opacity-0 animate-fadeUp [animation-delay:100ms]">
+      NeuraFlow turns messy raw data into clean, actionable insight — automatically, in real time.
+    </p>
+    <div class="mt-8 flex gap-4 opacity-0 animate-fadeUp [animation-delay:150ms]">
+      <button id="open-trial" class="bg-nocturnal text-arctic font-semibold px-6 py-3 rounded-full hover:bg-noir transition-colors duration-200">
+       Start Free Trial
+      </button>
+      <button id="open-demo" class="border border-nocturnal text-nocturnal font-semibold px-6 py-3 rounded-full hover:bg-mint transition-colors duration-200">
+        Watch Demo
+      </button>
+    </div>
+  </section>
+  <section id="features" class="py-24 px-6 max-w-7xl mx-auto">
+   <h2 class="font-mono font-bold text-3xl md:text-4xl text-nocturnal text-center mb-12">
+    Built for Modern Data Teams
+   </h2>
+
+   <div id="bento-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+    <div class="bento-item border border-mint rounded-2xl p-6 bg-arctic hover:bg-mint transition-colors duration-150" data-index="0">
+      <img src="assets/icons/arrow-path.svg" alt="Sync icon" class="w-8 h-8 mb-4">
+      <h3 class="font-mono font-semibold text-lg text-nocturnal mb-2">Real-Time Sync</h3>
+      <p class="text-sm text-noir/70">Pipelines update instantly as new data arrives, with zero manual refresh.</p>
+    </div>
+
+    <div class="bento-item border border-mint rounded-2xl p-6 bg-arctic hover:bg-mint transition-colors duration-150" data-index="1">
+      <img src="assets/icons/chart-pie.svg" alt="Analytics icon" class="w-8 h-8 mb-4">
+      <h3 class="font-mono font-semibold text-lg text-nocturnal mb-2">Smart Analytics</h3>
+      <p class="text-sm text-noir/70">AI-driven insights surface trends and anomalies automatically.</p>
+    </div>
+
+    <div class="bento-item border border-mint rounded-2xl p-6 bg-arctic hover:bg-mint transition-colors duration-150" data-index="2">
+      <img src="assets/icons/cog-8-tooth.svg" alt="Automation icon" class="w-8 h-8 mb-4">
+      <h3 class="font-mono font-semibold text-lg text-nocturnal mb-2">Full Automation</h3>
+      <p class="text-sm text-noir/70">Configure once, and let NeuraFlow handle the rest end-to-end.</p>
+    </div>
+
+    <div class="bento-item border border-mint rounded-2xl p-6 bg-arctic hover:bg-mint transition-colors duration-150" data-index="3">
+      <img src="assets/icons/cube-16-solid.svg" alt="Architecture icon" class="w-8 h-8 mb-4">
+      <h3 class="font-mono font-semibold text-lg text-nocturnal mb-2">Modular Architecture</h3>
+      <p class="text-sm text-noir/70">Plug-and-play components that scale with your data needs.</p>
+    </div>
+
+    <div class="bento-item border border-mint rounded-2xl p-6 bg-arctic hover:bg-mint transition-colors duration-150" data-index="4">
+      <img src="assets/icons/link-solid.svg" alt="Integration icon" class="w-8 h-8 mb-4">
+      <h3 class="font-mono font-semibold text-lg text-nocturnal mb-2">Seamless Integrations</h3>
+      <p class="text-sm text-noir/70">Connect to your existing tools and data sources in minutes.</p>
+    </div>
+
+    <div class="bento-item border border-mint rounded-2xl p-6 bg-arctic hover:bg-mint transition-colors duration-150" data-index="5">
+      <img src="assets/icons/arrow-trending-up.svg" alt="Growth icon" class="w-8 h-8 mb-4">
+      <h3 class="font-mono font-semibold text-lg text-nocturnal mb-2">Scales With You</h3>
+      <p class="text-sm text-noir/70">From startup to enterprise, performance that grows with your data.</p>
+    </div>
+
+   </div>
+ </section>
+ <section id="pricing" class="py-24 px-6 max-w-6xl mx-auto bg-mint/30">
+  <h2 class="font-mono font-bold text-3xl md:text-4xl text-nocturnal text-center mb-4">
+    Simple, Transparent Pricing
+  </h2>
+  <p class="text-center text-noir/70 mb-10">Choose the plan that fits your data needs.</p>
+
+  <!-- Controls: billing toggle + currency switcher -->
+  <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
+
+    <!-- Billing Cycle Toggle -->
+    <div class="flex items-center gap-3 bg-arctic rounded-full p-1 border border-mint">
+      <button id="monthly-btn" class="px-5 py-2 rounded-full font-medium text-sm bg-nocturnal text-arctic transition-colors duration-150">
+        Monthly
+      </button>
+      <button id="annual-btn" class="px-5 py-2 rounded-full font-medium text-sm text-noir transition-colors duration-150">
+        Annual <span class="text-saffron text-xs">(Save 20%)</span>
+      </button>
+    </div>
+
+    <!-- Currency Switcher -->
+    <select id="currency-select" class="bg-arctic border border-mint rounded-full px-4 py-2 font-medium text-sm text-noir">
+      <option value="INR">₹ INR</option>
+      <option value="USD">$ USD</option>
+      <option value="EUR">€ EUR</option>
+    </select>
+  </div>
+
+  <!-- Pricing Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <div class="pricing-card border border-mint rounded-2xl p-8 bg-arctic">
+      <h3 class="font-mono font-semibold text-xl text-nocturnal mb-2">Starter</h3>
+      <p class="text-sm text-noir/70 mb-6">For individuals and small projects.</p>
+      <div class="flex items-baseline gap-1 mb-6">
+        <span class="currency-symbol font-mono text-2xl text-nocturnal" data-tier="starter">₹</span>
+        <span class="price-value font-mono text-4xl font-bold text-nocturnal" data-tier="starter">999</span>
+        <span class="text-noir/60 text-sm">/mo</span>
+      </div>
+      <button class="w-full bg-nocturnal text-arctic font-semibold py-3 rounded-full hover:bg-noir transition-colors duration-200">
+        Choose Starter
+      </button>
+    </div>
+
+    <div class="pricing-card border-2 border-forsythia rounded-2xl p-8 bg-arctic relative">
+      <span class="absolute -top-3 right-6 bg-forsythia text-noir text-xs font-semibold px-3 py-1 rounded-full">Popular</span>
+      <h3 class="font-mono font-semibold text-xl text-nocturnal mb-2">Pro</h3>
+      <p class="text-sm text-noir/70 mb-6">For growing teams scaling fast.</p>
+      <div class="flex items-baseline gap-1 mb-6">
+        <span class="currency-symbol font-mono text-2xl text-nocturnal" data-tier="pro">₹</span>
+        <span class="price-value font-mono text-4xl font-bold text-nocturnal" data-tier="pro">2999</span>
+        <span class="text-noir/60 text-sm">/mo</span>
+      </div>
+      <button class="w-full bg-forsythia text-noir font-semibold py-3 rounded-full hover:scale-105 transition-transform duration-150">
+        Choose Pro
+      </button>
+    </div>
+
+    <div class="pricing-card border border-mint rounded-2xl p-8 bg-arctic">
+      <h3 class="font-mono font-semibold text-xl text-nocturnal mb-2">Enterprise</h3>
+      <p class="text-sm text-noir/70 mb-6">For large-scale data operations.</p>
+      <div class="flex items-baseline gap-1 mb-6">
+        <span class="currency-symbol font-mono text-2xl text-nocturnal" data-tier="enterprise">₹</span>
+        <span class="price-value font-mono text-4xl font-bold text-nocturnal" data-tier="enterprise">7999</span>
+        <span class="text-noir/60 text-sm">/mo</span>
+      </div>
+      <button class="w-full bg-nocturnal text-arctic font-semibold py-3 rounded-full hover:bg-noir transition-colors duration-200">
+        Choose Enterprise
+      </button>
+    </div>
+
+  </div>
+ </section>
+ <section id="proof" class="py-24 px-6 max-w-6xl mx-auto">
+  <h2 class="font-mono font-bold text-3xl md:text-4xl text-nocturnal text-center mb-12">
+    Trusted by Data Teams Everywhere
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <blockquote class="border border-mint rounded-2xl p-6 bg-arctic">
+      <p class="text-noir/80 text-sm mb-4">"NeuraFlow cut our data processing time by 70%. Our team now focuses on insights, not pipeline babysitting."</p>
+      <footer class="font-mono text-sm font-semibold text-nocturnal">— Priya R., Data Lead</footer>
+    </blockquote>
+
+    <blockquote class="border border-mint rounded-2xl p-6 bg-arctic">
+      <p class="text-noir/80 text-sm mb-4">"Setup took minutes, not weeks. The automation logic just works, even on messy legacy data."</p>
+      <footer class="font-mono text-sm font-semibold text-nocturnal">— Arjun K., CTO</footer>
+    </blockquote>
+
+    <blockquote class="border border-mint rounded-2xl p-6 bg-arctic">
+      <p class="text-noir/80 text-sm mb-4">"The real-time sync alone justified the switch. We catch anomalies before they become problems."</p>
+      <footer class="font-mono text-sm font-semibold text-nocturnal">— Meera S., Analytics Manager</footer>
+    </blockquote>
+
+  </div>
+ </section>
+ </main>
+ <footer class="bg-noir text-arctic py-10 px-6 text-center">
+  <p class="font-mono font-semibold mb-2">NeuraFlow</p>
+  <p class="text-sm text-arctic/60">© 2026 NeuraFlow. Built for Frontend Battle 3.0.</p>
+ </footer>
+ <div id="demo-modal" class="fixed inset-0 bg-noir/70 hidden items-center justify-center z-[100] px-6">
+  <div class="bg-arctic rounded-2xl max-w-2xl w-full p-8 relative">
+    <button id="close-demo" class="absolute top-4 right-4 text-noir/60 hover:text-noir text-2xl">&times;</button>
+    <h3 class="font-mono font-bold text-2xl text-nocturnal mb-4">See NeuraFlow in Action</h3>
+    <div class="bg-mint/40 rounded-xl p-6 mb-4">
+      <p class="text-noir/80 text-sm mb-3">🔄 <strong>Step 1:</strong> Connect your data sources in a few clicks.</p>
+      <p class="text-noir/80 text-sm mb-3">⚙️ <strong>Step 2:</strong> NeuraFlow auto-builds your pipeline using AI.</p>
+      <p class="text-noir/80 text-sm mb-3">📊 <strong>Step 3:</strong> Get real-time, clean insights instantly.</p>
+    </div>
+    <p class="text-noir/60 text-xs">Full interactive demo available after sign-up.</p>
+  </div>
+ </div>
+ <div id="trial-modal" class="fixed inset-0 bg-noir/70 hidden items-center justify-center z-[100] px-6">
+  <div class="bg-arctic rounded-2xl max-w-md w-full p-8 relative">
+    <button id="close-trial" class="absolute top-4 right-4 text-noir/60 hover:text-noir text-2xl">&times;</button>
+    <h3 class="font-mono font-bold text-2xl text-nocturnal mb-2">Start Your Free Trial</h3>
+    <p class="text-noir/70 text-sm mb-6">14 days free. No credit card required.</p>
+    <input type="email" id="trial-email" placeholder="Enter your work email" class="w-full border border-mint rounded-full px-4 py-3 mb-4 text-sm">
+    <button id="submit-trial" class="w-full bg-forsythia text-noir font-semibold py-3 rounded-full hover:scale-105 transition-transform duration-150">
+      Get Started Free
+    </button>
+  </div>
+ </div>
+ <script src="script.js"></script>
+
+</body>
